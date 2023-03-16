@@ -36,8 +36,44 @@
 // })
 
 // OBJECT
-const logCar = (car: { name: string, year?: number }): string => {
-    return `Name of car ${car.name} created at ${car.year}`
+
+// type Type = { name: string, year?: number }
+// interface myCar {
+//     name: string, year?: number
+// }
+
+// interface myCarBMW extends myCar {
+//     color?: 'red'
+// }
+
+// const logCar = (car: myCarBMW): string => {
+//     return `Name of car ${car.name} created at ${car.year} and its color ${car.color}`
+// }
+
+// console.log(logCar({ name: 'Porsche', year: 2023, color: 'red' }));
+
+
+// LITERAL TYPE
+// const car: 'mers' = 'mers'
+
+// type action = 'show' | 'hide'
+
+
+// ENUM
+
+// const runEnum = (): number => {
+//     return 1;
+// }
+
+enum dictionary {
+    Uzb,
+    Rus,
+    ENg = 'English',
 }
 
-console.log(logCar({ name: 'Porsche' }));
+let eng = dictionary.Uzb
+console.log(eng);
+console.log(dictionary[dictionary.Rus]);
+
+
+

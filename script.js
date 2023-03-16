@@ -24,8 +24,31 @@
 //     console.log(item);
 // })
 // OBJECT
-const logCar = (car) => {
-    return `Name of car ${car.name} created at ${car.year}`;
-};
-console.log(logCar({ name: 'Porsche' }));
+// type Type = { name: string, year?: number }
+// interface myCar {
+//     name: string, year?: number
+// }
+// interface myCarBMW extends myCar {
+//     color?: 'red'
+// }
+// const logCar = (car: myCarBMW): string => {
+//     return `Name of car ${car.name} created at ${car.year} and its color ${car.color}`
+// }
+// console.log(logCar({ name: 'Porsche', year: 2023, color: 'red' }));
+// LITERAL TYPE
+// const car: 'mers' = 'mers'
+// type action = 'show' | 'hide'
+// ENUM
+// const runEnum = (): number => {
+//     return 1;
+// }
+var dictionary;
+(function (dictionary) {
+    dictionary[dictionary["Uzb"] = 0] = "Uzb";
+    dictionary[dictionary["Rus"] = 1] = "Rus";
+    dictionary["ENg"] = "English";
+})(dictionary || (dictionary = {}));
+let eng = dictionary.Uzb;
+console.log(eng);
+console.log(dictionary[dictionary.Rus]);
 //# sourceMappingURL=script.js.map
