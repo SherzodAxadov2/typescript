@@ -65,15 +65,55 @@
 //     return 1;
 // }
 
-enum dictionary {
-    Uzb,
-    Rus,
-    ENg = 'English',
+// enum dictionary {
+//     Uzb,
+//     Rus,
+//     ENg = 'English',
+// }
+
+// let eng = dictionary.Uzb
+// console.log(eng);
+// console.log(dictionary[dictionary.Rus]);
+
+
+// TUPLES = ARRAY
+
+// const arr: [string, number, boolean] = ['apple', 132, true, 298398]
+// const arr: [string, number, boolean] = ['apple', 132, true]
+
+// arr.push(100)
+
+// console.log(arr);
+
+// const [apple] = arr
+// console.log(apple);
+
+// interface carType {
+//     name: string
+//     color: string
+//     year: number
+// }
+// const car = {
+//     name: 'bmw',
+//     color: 'black',
+//     year: 1990,
+// }
+
+// function loggerTime<T>(item: T): T {
+//     return item
+// }
+
+// console.log(loggerTime<carType>(car));
+
+// const anotherCar = loggerTime<carType>(car)
+// anotherCar.color = 'white'
+// anotherCar.year = 2023
+
+// console.log(car);
+// console.log(anotherCar);
+
+function logger<T>(data: T): T {
+    return data
 }
 
-let eng = dictionary.Uzb
-console.log(eng);
-console.log(dictionary[dictionary.Rus]);
-
-
-
+console.log(logger<string>('hiii'));
